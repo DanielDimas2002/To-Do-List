@@ -1,0 +1,165 @@
+/* Reset de estilos padrão e configuração de estilo global */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body{
+    background-color: #898989;
+    background-image: url('imagem-fundo.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+/* Estilo dos botões */
+button{
+    background-color: #fdfdfd;
+    color: #102F5e;
+    border: #102F5e solid 2px;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+/* Estilo dos botões ao passar o mouse */
+button:hover{
+    background-color: #102F5e;
+    color: #fff;
+}
+
+/* Estilo dos ícones dentro dos botões ao passar o mouse */
+button:hover > i{
+    color: #fff;
+}
+
+/* Estilo dos ícones dentro dos botões */
+button i {
+    color: #102F5e;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+/* Estilo dos campos de entrada de texto */
+input{
+    padding: 0.25rem 0.5rem;
+}
+
+/* Classe para esconder elementos */
+.hide{
+    display: none;
+}
+
+/* Estilo do container principal */
+.Todo-container{
+    max-width: 450px; 
+    margin: 3rem auto; 
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+/* Estilo do cabeçalho do container */
+.Todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilo dos formulários */
+#todo-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilo dos parágrafos dentro dos formulários */
+#todo-form p, #edit-form p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Estilo dos controles de formulário */
+.form-control{
+    display: flex;
+}
+
+/* Estilo dos campos de entrada dentro dos controles de formulário */
+.form-control input{
+    margin-right: 0.3rem;
+}
+
+/* Estilo do botão de cancelar edição */
+#cancel-edit-btn{
+    margin-top: 1rem;
+}
+
+/* Estilo da lista de tarefas */
+.todo-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+/* Adicionando flexbox ao container das tarefas */
+.todo {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+/* Estilo do título das tarefas */
+.todo h3{
+    flex: 1; 
+    font-size: 0.9rem;
+    margin-right: 1rem; 
+}
+
+/* Estilo dos botões dentro da lista de tarefas */
+.todo button{
+    margin-left: 0.4rem;
+}
+
+.done{
+    background-color: #395169;
+}
+
+.done{
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.todo-buttons{
+    display: flex;
+}
+
+.todo-buttons button{
+    margin-left: 0.4rem;
+}
+
+.Todo-content h3{
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.Todo-content{
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
